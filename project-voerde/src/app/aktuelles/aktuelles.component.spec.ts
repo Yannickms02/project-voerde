@@ -1,0 +1,21 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { AktuellesComponent } from './aktuelles.component';
+
+describe('AktuellesComponent', () => {
+  let component: AktuellesComponent;
+  let fixture: ComponentFixture<AktuellesComponent>;
+
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [AktuellesComponent]
+    });
+    fixture = TestBed.createComponent(AktuellesComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

@@ -1,0 +1,11 @@
+<div class="md:flex items-center justify-between h-20 px-8" id="headerContainer">
+    <div class="md:flex text-left justify-start">
+        <a routerLink="/"><img class="" src="assets/logo-rand.png" width="55px" height="55px" alt="Logo"></a>
+    </div>
+    <div class="md:flex text-right justify-end font-semibold">
+        <a routerLink="/über-uns" class="px-4 hover:underline-from-left">Über uns</a>
+        <a [routerLink]="['/aktuelles']" class="px-4 hover:underline-from-left">Aktuelles</a>
+        <a routerLink="/partner" class="px-4 hover:underline-from-left">Partner</a>
+        <a routerLink="/kirchenleitung" class="px-4 hover:underline-from-left">Kirchenleitung</a>
+    </div>
+</div>

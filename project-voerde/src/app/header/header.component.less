@@ -1,0 +1,26 @@
+#headerContainer{
+    background-color: rgb(255, 202, 78);
+}
+
+.hover\:underline-from-left {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .hover\:underline-from-left::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #111; 
+    transition: all 0.3s ease;
+    transform-origin: right;
+  }
+
+  .hover\:underline-from-left:hover::before {
+    width: 85%;
+  }
