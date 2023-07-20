@@ -14,7 +14,7 @@ const routes: Routes = [
   {path: 'datenschutz', component: DatenschutzerklaerungComponent},
   {path: 'aktuelles', component: AktuellesComponent},
   {path: 'kirchenleitung', component: KirchenleitungComponent},
-  {path: 'partner', component: PartnerComponent},
+  {path: 'projekte', component: PartnerComponent},
   {path: 'über-uns', component: GlaubeComponent}
 ];
 

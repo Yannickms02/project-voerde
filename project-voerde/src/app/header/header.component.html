@@ -1,11 +1,56 @@
-<div class="md:flex items-center justify-between h-20 px-8" id="headerContainer">
-    <div class="md:flex text-left justify-start">
+<div class="flex items-center justify-between h-20 px-8 shadow-md rounded" id="headerContainer">
+    <div class="flex text-left justify-start">
         <a routerLink="/"><img class="" src="assets/logo-rand.png" width="55px" height="55px" alt="Logo"></a>
     </div>
-    <div class="md:flex text-right justify-end font-semibold">
+    <div class="hidden md:block md:flex text-right justify-end font-semibold">
         <a routerLink="/über-uns" class="px-4 hover:underline-from-left">Über uns</a>
         <a [routerLink]="['/aktuelles']" class="px-4 hover:underline-from-left">Aktuelles</a>
-        <a routerLink="/partner" class="px-4 hover:underline-from-left">Partner</a>
+        <a routerLink="/projekte" class="px-4 hover:underline-from-left">Projekte</a>
         <a routerLink="/kirchenleitung" class="px-4 hover:underline-from-left">Kirchenleitung</a>
     </div>
+    <!-- Hamburger icon for mobile -->
+<!--         <div class="block md:hidden bg-base-200">
+
+                <button id="hamburgerBtn" class="block text-gray-900 focus:outline-none ">
+                    <svg class="fill-current h-6 w-6" viewBox="0 0 24 24">
+                        <path
+                            d="M4 6H20M4 12H20M4 18H20"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </button>
+
+        
+    </div> -->
+     <!-- Hamburger-Icon -->
+ <div class="block lg:hidden">
+    <button id="navbar-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-gray-800">
+      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M2 4.75C2 4.33579 2.33579 4 2.75 4H17.25C17.6642 4 18 4.33579 18 4.75C18 5.16421 17.6642 5.5 17.25 5.5H2.75C2.33579 5.5 2 5.16421 2 4.75ZM2.75 8H17.25C17.6642 8 18 8.33579 18 8.75C18 9.16421 17.6642 9.5 17.25 9.5H2.75C2.33579 9.5 2 9.16421 2 8.75C2 8.33579 2.33579 8 2.75 8ZM17.25 12H2.75C2.33579 12 2 12.3358 2 12.75C2 13.1642 2.33579 13.5 2.75 13.5H17.25C17.6642 13.5 18 13.1642 18 12.75C18 12.3358 17.6642 12 17.25 12Z"></path>
+      </svg>
+    </button>
+  </div>
 </div>
+
+<hr>
+<!-- Mobile friendly box for navigation -->
+<div id="mobileNavBox" class="hidden md:hidden">
+    <a routerLink="/über-uns" class="block py-2 pt-4 px-8 hover:bg-gray-100 text-right">Über uns</a>
+    <a [routerLink]="['/aktuelles']" class="block py-2 px-8 hover:bg-gray-100 text-right">Aktuelles</a>
+    <a routerLink="/projekte" class="block py-2 px-8 hover:bg-gray-100 text-right">Projekte</a>
+    <a routerLink="/kirchenleitung" class="block py-2 px-8 hover:bg-gray-100 text-right">Kirchenleitung</a>
+</div>
+
+
+  
+  <!-- Dropdown-Navbar -->
+  <div id="navbar" class="md:hidden absolute right-0 mt-2 py-2 w-48 bg-white border rounded-lg shadow-lg z-10">
+    <a routerLink="/über-uns" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Über uns</a>
+    <a [routerLink]="['/aktuelles']" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Aktuelles</a>
+    <a routerLink="/projekte" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Projekte</a>
+    <a routerLink="/kirchenleitung" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Kirchenleitung</a>
+  </div>
+  

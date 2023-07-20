@@ -1,13 +1,13 @@
-<div class="flex flex-col min-h-screen" id="farbContainer">
+<div class="flex flex-col min-h-screen bg-gradient-to-r from-gray-100 to-gray-200" id="farbContainer">
   <div class="flex-none container mx-auto" id="header">
     <app-header></app-header>
   </div>
   
-  <div class="container mx-auto flex-auto md:flex items-center justify-center" id="content">
+  <div class="container mx-auto flex-auto md:flex items-center justify-center px-5 md:px-0" id="content">
     <router-outlet></router-outlet>
   </div>
   
-  <div class="flex-none h-17 my-1" id="footer"> 
+  <div class="flex-none h-17 mt-5" id="footer"> 
     <app-footer></app-footer>
   </div>
 </div>
