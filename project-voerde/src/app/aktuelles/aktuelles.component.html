@@ -1,5 +1,7 @@
-<h1 style="color: #9b1313; margin-top: 10px" class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Gemeinde Voerde</h1>
-<h2 style="color: #9b1313; margin-top: 10px; margin-bottom: 10px;" class="text-4xl font-extrabold dark:text-white">Gottesdienste und Veranstaltungen</h2>
-<p>Der Gottesdienst findet zurzeit im Vierzehntägigem Rhythmus statt</p>
-<p *ngIf="isGottesdienstToday">Nächster Gottesdienst: Heute um 10:00 Uhr</p>
-<p *ngIf="!isGottesdienstToday">Nächster Gottesdienst: {{ formattedNextGottesdienstDate }} um 10:00 Uhr</p>
+<article class="prose">
+    <h1 style="color: #9b1313;" class="mt-4">Gemeinde Voerde</h1>
+    <h2 style="color: #9b1313;" class="my-4">Gottesdienste und Veranstaltungen</h2>
+    <p>Der Gottesdienst findet zurzeit im Vierzehntägigem Rhythmus statt</p>
+    <p *ngIf="isGottesdienstToday">Nächster Gottesdienst: Heute um 10:00 Uhr</p>
+    <p *ngIf="!isGottesdienstToday">Nächster Gottesdienst: {{ formattedNextGottesdienstDate }} um 10:00 Uhr</p>    
+</article>
