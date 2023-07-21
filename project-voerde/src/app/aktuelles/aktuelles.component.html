@@ -1,7 +1,7 @@
 <article class="prose">
     <h1 style="color: #9b1313;" class="mt-4">Gemeinde Voerde</h1>
     <h2 style="color: #9b1313;" class="my-4">Gottesdienste und Veranstaltungen</h2>
-    <p>Der Gottesdienst findet zurzeit im Vierzehntägigem Rhythmus statt</p>
+    <p>Der Gottesdienst findet zurzeit im <span class="badge rounded-md bg-red-900 text-white py-3 font-bold">vierzehntägigem</span> Rhythmus statt</p>
     <p *ngIf="isGottesdienstToday">Nächster Gottesdienst: Heute um 10:00 Uhr</p>
-    <p *ngIf="!isGottesdienstToday">Nächster Gottesdienst: {{ formattedNextGottesdienstDate }} um 10:00 Uhr</p>    
+    <p *ngIf="!isGottesdienstToday">Nächster Gottesdienst: <span class="badge font-semibold">{{ formattedNextGottesdienstDate }}</span> um  <span class="badge font-semibold">10:00 Uhr</span></p>    
 </article>

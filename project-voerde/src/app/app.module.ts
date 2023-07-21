@@ -13,6 +13,7 @@ import { GlaubeComponent } from './glaube/glaube.component';
 import { AktuellesComponent } from './aktuelles/aktuelles.component';
 import { PartnerComponent } from './partner/partner.component';
 import { KirchenleitungComponent } from './kirchenleitung/kirchenleitung.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { KirchenleitungComponent } from './kirchenleitung/kirchenleitung.compone
     GlaubeComponent,
     AktuellesComponent,
     PartnerComponent,
-    KirchenleitungComponent
+    KirchenleitungComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

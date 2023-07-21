@@ -1,14 +1,14 @@
 #headerContainer{
-    background-color: rgb(179, 218, 243);
-    opacity: .85;
+    /* background-color: rgb(179, 218, 243);
+    opacity: .85; */
 }
 
-.hover\:underline-from-left {
+.hover\:underline-animation {
     position: relative;
     transition: all 0.3s ease;
   }
 
-  .hover\:underline-from-left::before {
+  .hover\:underline-animation::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -22,6 +22,6 @@
     transform-origin: right;
   }
 
-  .hover\:underline-from-left:hover::before {
-    width: 85%;
+  .hover\:underline-animation:hover::before {
+    width: 80%;
   }

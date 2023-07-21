@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.less']
 })
 export class FooterComponent {
+   aktuellesJahr: number | undefined;
 
+   ngOnInit() {
+    this.aktuellesJahr = new Date().getFullYear();
+   }
 }

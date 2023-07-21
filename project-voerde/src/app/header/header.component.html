@@ -1,12 +1,12 @@
-<div class="flex items-center justify-between h-20 px-8 shadow-md rounded" id="headerContainer">
+<div class="flex items-center justify-between h-20 px-8 shadow-md rounded bg-slate-200" id="headerContainer">
     <div class="flex text-left justify-start">
         <a routerLink="/"><img class="" src="assets/logo-rand.png" width="55px" height="55px" alt="Logo"></a>
     </div>
-    <div class="hidden md:block md:flex text-right justify-end font-semibold">
-        <a routerLink="/über-uns" class="px-4 hover:underline-from-left">Über uns</a>
-        <a [routerLink]="['/aktuelles']" class="px-4 hover:underline-from-left">Aktuelles</a>
-        <a routerLink="/projekte" class="px-4 hover:underline-from-left">Projekte</a>
-        <a routerLink="/kirchenleitung" class="px-4 hover:underline-from-left">Kirchenleitung</a>
+    <div class="hidden md:flex text-right justify-end font-semibold">
+        <a routerLink="/über-uns" class="px-4 hover:underline-animation">Über uns</a>
+        <a [routerLink]="['/aktuelles']" class="px-4 hover:underline-animation">Aktuelles</a>
+        <a routerLink="/projekte" class="px-4 hover:underline-animation">Projekte</a>
+        <a routerLink="/kirchenleitung" class="px-4 hover:underline-animation">Kirchenleitung</a>
     </div>
     <!-- Hamburger icon for mobile -->
 <!--         <div class="block md:hidden bg-base-200">
@@ -26,31 +26,24 @@
         
     </div> -->
      <!-- Hamburger-Icon -->
- <div class="block lg:hidden">
-    <button id="navbar-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-900 hover:border-gray-800">
-      <svg class="w-5 h-5" viewBox="0 0 20 20" fill="currentColor">
-        <path fill-rule="evenodd" d="M2 4.75C2 4.33579 2.33579 4 2.75 4H17.25C17.6642 4 18 4.33579 18 4.75C18 5.16421 17.6642 5.5 17.25 5.5H2.75C2.33579 5.5 2 5.16421 2 4.75ZM2.75 8H17.25C17.6642 8 18 8.33579 18 8.75C18 9.16421 17.6642 9.5 17.25 9.5H2.75C2.33579 9.5 2 9.16421 2 8.75C2 8.33579 2.33579 8 2.75 8ZM17.25 12H2.75C2.33579 12 2 12.3358 2 12.75C2 13.1642 2.33579 13.5 2.75 13.5H17.25C17.6642 13.5 18 13.1642 18 12.75C18 12.3358 17.6642 12 17.25 12Z"></path>
-      </svg>
-    </button>
-  </div>
+     <label class="btn btn-circle swap swap-rotate bg-transparent md:hidden" id="iconToggle">
+  
+      <!-- this hidden checkbox controls the state -->
+      <input type="checkbox" id="hamburgerBtn" name="hamburgerBtn"/>
+      
+      <!-- hamburger icon -->
+      <svg id="hamburgerIcn" class="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+      
+      <!-- close icon -->
+      <svg id="closeIcn" class="swap-on fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+      
+    </label>
 </div>
-
-<hr>
-<!-- Mobile friendly box for navigation -->
+<!-- <div class="w-full h-[1.5px] bg-black rounded-lg my-1"></div>
+ --><!-- Mobile friendly box for navigation -->
 <div id="mobileNavBox" class="hidden md:hidden">
     <a routerLink="/über-uns" class="block py-2 pt-4 px-8 hover:bg-gray-100 text-right">Über uns</a>
     <a [routerLink]="['/aktuelles']" class="block py-2 px-8 hover:bg-gray-100 text-right">Aktuelles</a>
     <a routerLink="/projekte" class="block py-2 px-8 hover:bg-gray-100 text-right">Projekte</a>
     <a routerLink="/kirchenleitung" class="block py-2 px-8 hover:bg-gray-100 text-right">Kirchenleitung</a>
 </div>
-
-
-  
-  <!-- Dropdown-Navbar -->
-  <div id="navbar" class="md:hidden absolute right-0 mt-2 py-2 w-48 bg-white border rounded-lg shadow-lg z-10">
-    <a routerLink="/über-uns" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Über uns</a>
-    <a [routerLink]="['/aktuelles']" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Aktuelles</a>
-    <a routerLink="/projekte" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Projekte</a>
-    <a routerLink="/kirchenleitung" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Kirchenleitung</a>
-  </div>
-  
