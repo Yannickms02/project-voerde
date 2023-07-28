@@ -25,3 +25,97 @@
   .hover\:underline-animation:hover::before {
     width: 80%;
   }
+
+  .hover\:underline-current {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .hover\:underline-current::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #9b1313; 
+    transition: all 0.3s ease;
+    transform-origin: right;
+  }
+
+  .hover\:underline-current:hover::before {
+    width: 80%;
+  }
+
+  .hover\:underline-menu-current {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .hover\:underline-menu-current::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 0;
+    height: 2px;
+    background-color: #9b1313; 
+    transition: all 0.3s ease;
+    transform-origin: left;
+  }
+
+  .hover\:underline-menu-current:hover::before {
+    width: 50%;
+  }
+
+  .hover\:underline-menu {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .hover\:underline-menu::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: 0;
+    height: 2px;
+    background-color: #111; 
+    transition: all 0.3s ease;
+    transform-origin: left;
+  }
+
+  .hover\:underline-menu:hover::before {
+    width: 50%;
+  }
+
+
+  #navBarToggle {
+    transition: all ease-in-out .5s;
+  }
+
+  #navBarClose {
+    transition: all ease-in-out .5s;
+  }
+
+  #mobileNavBox {
+    position: absolute;
+    top: 10vh;
+    left: calc(100vw - 15rem);
+    animation: growDown .25s linear forwards;
+    transform-origin: top center;
+  }
+
+  @keyframes growDown {
+    0% {
+        transform: scaleY(0)
+    }
+    80% {
+        transform: scaleY(1.1)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}

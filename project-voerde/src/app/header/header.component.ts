@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -9,33 +9,44 @@ import { ActivatedRoute } from '@angular/router';
 export class HeaderComponent {
   activeRoute: string | undefined;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
-    
-    const navBarToggle = document.querySelector("#hamburgerBtn");
+    const navBarToggle = document.querySelector("#navBarToggle");
+    const navBarClose = document.querySelector("#navBarClose");
     const mobileNavBox = document.querySelector("#mobileNavBox");
-    const hamburgerIcon = document.querySelector("#hamburgerIcn");
-    const closeIcon = document.querySelector('#closeIcn');
-
-    function hideNavBarListener() {
-        mobileNavBox!.className = "hidden md:hidden";
-        
-    }
+    // get active route
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.activeRoute = event.url.split("/")[1];
+        if (mobileNavBox!.className === "block md:hidden") {
+          navBarToggle!.className = "block md:hidden p-2";
+          navBarClose!.className = "hidden md:hidden";
+          mobileNavBox!.className = "hidden md:hidden";
+        }
+      }
+    });
 
     navBarToggle?.addEventListener("click", () => {
-      const currentView = mobileNavBox!.className;
-      if (currentView === "hidden md:hidden") {
-        mobileNavBox!.className = "block md:hidden mx-5 mt-2 border border-black rounded-lg w-52 float-right shadow-md rounded";
-        
-        mobileNavBox!.addEventListener("click", hideNavBarListener);
+      if (mobileNavBox!.className === "hidden md:hidden") {
+        navBarToggle!.className = "hidden md:hidden";
+        navBarClose!.className = "block md:hidden p-2";
+        mobileNavBox!.className = "block md:hidden";
+
+        navBarClose?.addEventListener("click", () => {
+          if (navBarClose.className === "block md:hidden p-2") {
+            navBarToggle!.className = "block md:hidden p-2";
+            navBarClose!.className = "hidden md:hidden";
+            mobileNavBox!.className = "hidden md:hidden";
+          }
+        });
+
       }
       else {
         mobileNavBox!.className = "hidden md:hidden";
-        
-        mobileNavBox!.removeEventListener("click", hideNavBarListener);
+        navBarToggle!.className = "block md:hidden p-2";
+        navBarClose!.className = "hidden md:hidden";
       }
-      
     });
     
   }

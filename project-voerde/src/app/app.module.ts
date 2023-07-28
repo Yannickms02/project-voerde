@@ -14,6 +14,7 @@ import { AktuellesComponent } from './aktuelles/aktuelles.component';
 import { PartnerComponent } from './partner/partner.component';
 import { KirchenleitungComponent } from './kirchenleitung/kirchenleitung.component';
 import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { HomeComponent } from './home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [DatePipe], // Füge den DatePipe zur providers-Liste hinzu
   bootstrap: [AppComponent]

@@ -1,11 +1,54 @@
-<article class="prose">
-    <p>So erreichen Sie uns:</p>
-    <div style="display: flex;">
-        <img src="/assets/phone.png" alt="X " style="height: 17px; margin-top: 5px; margin-right: 5px;">
-        <a>Telefon: +49 171 6813142</a>
+<div class="flex flex-col md:flex-row justify-evenly items-center mx-auto">
+    <article class="prose items-start pl-16 pr-8 md:w-full">
+        <h1 class="text-red-800">Hier sind wir erreichbar</h1>
+        <div class="flex flex-row items-center md:w-full py-2" id="phone-container">
+            <img src="/assets/phone.png" width="20px" alt="Telefon-Icon">
+            <a class="px-4">Telefon: +49 171 6813142</a>
+        </div>
+        <div class="flex flex-row items-center md:w-full py-2" id="mail-container">
+            <img src="/assets/mail.png" width="20px" alt="E-Mail-Icon">
+            <a href="mailto:voerde@apostolisch.de" class="px-4">E-Mail: voerde@apostolisch.de</a>
+        </div>
+
+        <div class="flex flex-row items-center md:w-full py-2" id="loc-container">
+            <img src="assets/location.png" width="20px" alt="Standort-Icon" class="items-start">
+            <a href="https://goo.gl/maps/UwxzPTAXTfBmJWvDA" class="px-4">Hövelmannskath 1, 46562 Voerde (Niederrhein)</a>
+        </div>
+
+    </article>
+    <div class="hero hero-content flex-col md:items-end m-8" id="msgContainer">
+        <div class="card flex-shrink-0 w-full max-w-sm shadow-lg active:shadow-2xl hover:shadow-2xl transition-shadow duration-500 bg-base-100">
+            <div class="text-center">
+                <h1 class="text-2xl font-bold px-6 pt-6 text-gray-800">Sende uns eine Nachricht</h1>
+            </div>
+            <div class="card-body">
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Name</span>
+                    </label>
+                    <input type="text" placeholder="Vorname Nachname" class="input input-bordered" [(ngModel)]="msg.name" />
+                </div>
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">E-Mail</span>
+                    </label>
+                    <input type="text" placeholder="E-Mail-Adresse" class="input input-bordered" [(ngModel)]="msg.mail" />
+                </div>
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Betreff</span>
+                    </label>
+                    <input type="text" placeholder="Betreff" class="input input-bordered" [(ngModel)]="msg.subject"/>
+                </div>
+                <div class="form-control">
+                    <label class="label">
+                        <span class="label-text">Nachricht</span>
+                    </label>
+                    <textarea type="text" placeholder="Was möchten Sie uns mitteilen?" class="textarea textarea-bordered" [(ngModel)]="msg.message"></textarea>
+                </div>
+                <div class="form-control mt-6">
+                    <button class="btn bg-red-800 text-white" id="submit-btn">Absenden</button>
+                </div>
+            </div>
+        </div>
     </div>
-    <div style="display: flex;">
-        <img src="/assets/mail.png" alt="X " style="height: 17px; margin-top: 5px; margin-right: 5px;">
-        <a href="mailto:voerde@apostolisch.de">E-Mail: voerde@apostolisch.de</a>
-    </div>
-</article>
