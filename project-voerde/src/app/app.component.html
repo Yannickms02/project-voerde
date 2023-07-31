@@ -1,9 +1,13 @@
-<div class="flex flex-col h-screen w-full" id="farbContainer">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<div class="flex flex-col h-screen" id="farbContainer">
   <div class="flex-none container mx-auto" id="header">
     <app-header></app-header>
   </div>
   
-  <div class="flex-none mx-auto px-5 py-16" id="content">
+  <div class="flex items-start justify-center mb-auto px-5 py-16 w-full" id="content">
     <router-outlet></router-outlet>
   </div>
   

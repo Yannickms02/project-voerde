@@ -3,6 +3,10 @@ module.exports = {
   content: [
     "./src/**/*.{html,ts}",
   ],
+  corePlugins: {
+    preflight: true,
+  },
+  prefix: '',
   theme: {
     screens: {
       'sm': '640px',

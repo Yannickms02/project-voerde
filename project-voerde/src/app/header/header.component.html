@@ -11,8 +11,8 @@
         [ngClass]="activeRoute === 'aktuelles' ? 'px-4 hover:underline-current text-red-800' : 'px-4 hover:underline-animation'">Aktuelles</a>
       <a routerLink="/projekte"
         [ngClass]="activeRoute === 'projekte' ? 'px-4 hover:underline-current text-red-800' : 'px-4 hover:underline-animation'">Projekte</a>
-      <a routerLink="/kirchenleitung"
-        [ngClass]="activeRoute === 'kirchenleitung' ? 'px-4 hover:underline-current text-red-800' : 'px-4 hover:underline-animation'">Kirchenleitung</a>
+      <a routerLink="/team"
+        [ngClass]="activeRoute === 'team' ? 'px-4 hover:underline-current text-red-800' : 'px-4 hover:underline-animation'">Gemeindeteam</a>
     </div>
 
 
@@ -33,7 +33,7 @@
         <li [ngClass]="activeRoute === 'ueber-uns' ? 'hover:underline-menu-current' : 'hover:underline-menu'"><a routerLink="/ueber-uns">Über uns</a></li>
         <li [ngClass]="activeRoute === 'aktuelles' ? 'hover:underline-menu-current' : 'hover:underline-menu'"><a [routerLink]="['/aktuelles']">Aktuelles</a></li>
         <li [ngClass]="activeRoute === 'projekte' ? 'hover:underline-menu-current' : 'hover:underline-menu'"><a routerLink="/projekte">Projekte</a></li>
-        <li [ngClass]="activeRoute === 'kirchenleitung' ? 'hover:underline-menu-current' : 'hover:underline-menu'"><a routerLink="/kirchenleitung">Kirchenleitung</a></li>
+        <li [ngClass]="activeRoute === 'team' ? 'hover:underline-menu-current' : 'hover:underline-menu'"><a routerLink="/team">Gemeindeteam</a></li>
       </ul>
     </div>
   </div>

@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: 'kontakt', component: KontaktComponent },
   { path: 'datenschutz', component: DatenschutzerklaerungComponent },
   { path: 'aktuelles', component: AktuellesComponent },
-  { path: 'kirchenleitung', component: KirchenleitungComponent },
+  { path: 'team', component: KirchenleitungComponent },
   { path: 'projekte', component: PartnerComponent },
   { path: 'ueber-uns', component: GlaubeComponent },
   { path: '*', component: AktuellesComponent } // Not found route -> Not Found Page / Home
