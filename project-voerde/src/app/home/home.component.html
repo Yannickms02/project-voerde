@@ -1,52 +1,48 @@
-<div class="flex flex-col items-center justify-center">
-  <article class="prose">
-    <h1 class="text-red">Willkommen auf unserer Seite</h1>
-</article>
+<div class="tw-flex tw-flex-col tw-items-center tw-justify-center tw-w-screen">
+  <article class="tw-prose">
+    <h1 class="tw-text-red tw-my-8">Willkommen auf unserer Seite</h1>
+  </article>
 
-<div class="carousel carousel-center w-full h-[550px] my-8 mx-auto">
-    <div id="slide1" class="carousel-item relative w-full flex justify-center">
-      <img src="assets/WLHN3241.JPG" class="w-min" />
-      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-        <a href="#slide4" class="btn btn-circle bg-slate-200">❮</a> 
-        <a href="#slide2" class="btn btn-circle bg-slate-200">❯</a>
-      </div>
-    </div> 
-    <div id="slide2" class="carousel-item relative w-full flex justify-center">
-      <img src="assets/JFLB5996.JPG" class="w-min" />
-      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-        <a href="#slide1" class="btn btn-circle bg-slate-200">❮</a> 
-        <a href="#slide3" class="btn btn-circle bg-slate-200">❯</a>
-      </div>
-    </div> 
-    <div id="slide3" class="carousel-item relative w-full flex justify-center">
-      <img src="assets/FSSN7402.JPG" class="w-min" />
-      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-        <a href="#slide2" class="btn btn-circle bg-slate-200">❮</a> 
-        <a href="#slide4" class="btn btn-circle bg-slate-200">❯</a>
-      </div>
+<ngb-carousel class="tw-w-5/6 lg:tw-w-1/2">
+  <ng-template ngbSlide>
+    <img src="assets/WLHN3241.JPG" alt="Slide 1" class="w-full tw-rounded-2xl" />
+    <div class="carousel-caption">
+      <p>Placeholder</p>
     </div>
-    <div id="slide4" class="carousel-item relative w-full flex justify-center">
-      <img src="assets/XPTL4444.JPG" class="w-min" />
-      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-        <a href="#slide3" class="btn btn-circle bg-slate-200">❮</a> 
-        <a href="#slide5" class="btn btn-circle bg-slate-200">❯</a>
-      </div>
-    </div> 
-    <div id="slide5" class="carousel-item relative w-full flex justify-center">
-      <img src="assets/LQEN5414.JPG" class="w-min" />
-      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-        <a href="#slide4" class="btn btn-circle bg-slate-200">❮</a> 
-        <a href="#slide6" class="btn btn-circle bg-slate-200">❯</a>
-      </div>
-    </div> 
-    <div id="slide6" class="carousel-item relative w-full flex justify-center">
-      <img src="assets/PNQE4846.JPG" class="w-min" />
-      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-        <a href="#slide5" class="btn btn-circle bg-slate-200">❮</a> 
-        <a href="#slide1" class="btn btn-circle bg-slate-200">❯</a>
-      </div>
-    </div> 
-  </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="assets/JFLB5996.JPG" alt="Slide 2" class="w-full tw-rounded-2xl" />
+    <div class="carousel-caption">
+      <p>Placeholder</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="assets/FSSN7402.JPG" alt="Slide 3" class="w-full tw-rounded-2xl" />
+    <div class="carousel-caption">
+      <p>Placeholder</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="assets/XPTL4444.JPG" alt="Slide 4" class="w-full tw-rounded-2xl" />
+    <div class="carousel-caption">
+      <p>Gemeindeheim Außenansicht</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="assets/LQEN5414.JPG" alt="Slide 5" class="w-full tw-rounded-2xl" />
+    <div class="carousel-caption">
+      <p>Gemeindeheim Außenansicht 2</p>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <img src="assets/PNQE4846.JPG" alt="Slide 6" class="w-full tw-rounded-2xl" />
+    <div class="carousel-caption">
+      <p>Gemeindeheim Straßenansicht</p>
+    </div>
+  </ng-template>
+</ngb-carousel>
+
+
 </div>
 
 

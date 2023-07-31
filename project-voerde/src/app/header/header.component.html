@@ -1,35 +1,35 @@
-<div class="flex flex-col flex-wrap">
-  <div class="flex items-center justify-between h-20 px-8 shadow-md rounded bg-slate-200" id="headerContainer">
-    <div class="flex text-left justify-start">
+<div class="tw-flex tw-flex-col tw-flex-wrap">
+  <div class="tw-flex tw-items-center tw-justify-between tw-h-20 tw-px-8 tw-shadow-md tw-rounded tw-bg-slate-200" id="headerContainer">
+    <div class="tw-flex tw-text-left tw-justify-start">
       <a routerLink="/"><img class="" src="assets/logo-rand.png" width="55px" height="55px" alt="Logo"></a>
     </div>
-    <div class="hidden md:flex text-right justify-end font-semibold">
+    <div class="tw-hidden md:tw-flex tw-text-right tw-justify-end tw-font-semibold">
       <a routerLink="/ueber-uns"
-        [ngClass]="activeRoute === 'ueber-uns' ? 'px-4 hover:underline-current text-red-800' : 'px-4 hover:underline-animation'">Über
+        [ngClass]="activeRoute === 'ueber-uns' ? 'tw-px-4 hover:underline-current tw-text-red-800' : 'tw-px-4 hover:underline-animation'">Über
         uns</a>
       <a [routerLink]="['/aktuelles']"
-        [ngClass]="activeRoute === 'aktuelles' ? 'px-4 hover:underline-current text-red-800' : 'px-4 hover:underline-animation'">Aktuelles</a>
+        [ngClass]="activeRoute === 'aktuelles' ? 'tw-px-4 hover:underline-current tw-text-red-800' : 'tw-px-4 hover:underline-animation'">Aktuelles</a>
       <a routerLink="/projekte"
-        [ngClass]="activeRoute === 'projekte' ? 'px-4 hover:underline-current text-red-800' : 'px-4 hover:underline-animation'">Projekte</a>
+        [ngClass]="activeRoute === 'projekte' ? 'tw-px-4 hover:underline-current tw-text-red-800' : 'tw-px-4 hover:underline-animation'">Projekte</a>
       <a routerLink="/team"
-        [ngClass]="activeRoute === 'team' ? 'px-4 hover:underline-current text-red-800' : 'px-4 hover:underline-animation'">Gemeindeteam</a>
+        [ngClass]="activeRoute === 'team' ? 'tw-px-4 hover:underline-current tw-text-red-800' : 'tw-px-4 hover:underline-animation'">Gemeindeteam</a>
     </div>
 
 
-    <div class="block md:hidden p-2" id="navBarToggle">
-      <div class="w-7 h-1 bg-gray-700 rounded" id="line-1"></div>
-      <div class="w-7 h-1 bg-gray-700 rounded mt-1" id="line-2"></div>
-      <div class="w-4 h-1 bg-gray-700 rounded mt-1" id="line-3"></div>
+    <div class="tw-block md:tw-hidden tw-p-2" id="navBarToggle">
+      <div class="tw-w-7 tw-h-1 tw-bg-gray-700 tw-rounded" id="line-1"></div>
+      <div class="tw-w-7 tw-h-1 tw-bg-gray-700 tw-rounded tw-mt-1" id="line-2"></div>
+      <div class="tw-w-4 tw-h-1 tw-bg-gray-700 tw-rounded tw-mt-1" id="line-3"></div>
     </div>
-    <div class="hidden md-hidden" id="navBarClose">
-      <div class="w-7 h-1 bg-gray-700 rounded rotate-45"></div>
-      <div class="w-7 h-1 bg-gray-700 rounded -rotate-45 relative bottom-1"></div>
+    <div class="tw-hidden md:tw-hidden" id="navBarClose">
+      <div class="tw-w-7 tw-h-1 tw-bg-gray-700 tw-rounded tw-rotate-45"></div>
+      <div class="tw-w-7 tw-h-1 tw-bg-gray-700 tw-rounded tw--rotate-45 tw-relative tw-bottom-1"></div>
     </div>
 
 
 
-    <div id="mobileNavBox" class="hidden md:hidden">
-      <ul class="menu bg-slate-200 w-56 rounded-box shadow-md" id="menuList">
+    <div id="mobileNavBox" class="tw-hidden md:tw-hidden tw-z-10">
+      <ul class="tw-menu tw-bg-slate-200 tw-w-56 tw-rounded-box tw-shadow-md" id="menuList">
         <li [ngClass]="activeRoute === 'ueber-uns' ? 'hover:underline-menu-current' : 'hover:underline-menu'"><a routerLink="/ueber-uns">Über uns</a></li>
         <li [ngClass]="activeRoute === 'aktuelles' ? 'hover:underline-menu-current' : 'hover:underline-menu'"><a [routerLink]="['/aktuelles']">Aktuelles</a></li>
         <li [ngClass]="activeRoute === 'projekte' ? 'hover:underline-menu-current' : 'hover:underline-menu'"><a routerLink="/projekte">Projekte</a></li>

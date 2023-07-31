@@ -1,8 +1,8 @@
-<footer class="footer footer-center p-10 bg-base-200 text-base-content rounded">
-    <div class="grid grid-flow-col gap-4">
-        <a routerLink="/datenschutz" class="mx-2 no-underline font-medium hover:underline-animation">Datenschutzerklärung</a>
-        <a routerLink="/kontakt" class="mx-2 no-underline font-medium hover:underline-animation">Kontakt</a>
-        <a routerLink="/impressum" class="mx-2 no-underline font-medium hover:underline-animation">Impressum</a>
+<footer class="tw-footer tw-footer-center tw-p-10 tw-bg-base-200 tw-text-base-content tw-rounded">
+    <div class="tw-grid tw-grid-flow-col tw-gap-4">
+        <a routerLink="/datenschutz" [ngClass]="activeRoute === 'datenschutz' ? 'tw-mx-2 tw-no-underline tw-font-medium hover:underline-current' : 'tw-mx-2 tw-no-underline tw-font-medium hover:underline-animation'">Datenschutzerklärung</a>
+        <a routerLink="/kontakt" [ngClass]="activeRoute === 'kontakt' ? 'tw-mx-2 tw-no-underline tw-font-medium hover:underline-current' : 'tw-mx-2 tw-no-underline tw-font-medium hover:underline-animation'">Kontakt</a>
+        <a routerLink="/impressum" [ngClass]="activeRoute === 'impressum' ? 'tw-mx-2 tw-no-underline tw-font-medium hover:underline-current' : 'tw-mx-2 tw-no-underline tw-font-medium hover:underline-animation'">Impressum</a>
     </div> 
 
     <div>

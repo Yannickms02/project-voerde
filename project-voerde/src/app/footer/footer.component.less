@@ -26,3 +26,26 @@
   .hover\:underline-animation:hover::before {
     width: 110%;
   }
+
+  .hover\:underline-current {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .hover\:underline-current::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #9b1313; 
+    transition: all 0.3s ease;
+    transform-origin: right;
+  }
+
+  .hover\:underline-current:hover::before {
+    width: 110%;
+  }

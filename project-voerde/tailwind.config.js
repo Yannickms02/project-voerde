@@ -6,7 +6,7 @@ module.exports = {
   corePlugins: {
     preflight: true,
   },
-  prefix: '',
+  prefix: 'tw-',
   theme: {
     screens: {
       'sm': '640px',
@@ -23,7 +23,16 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
-    }
+    },
+    extend: {
+      typography: {
+        DEFAULT: {
+          css: {
+            maxWidth: '130ch', // add required value here
+          }
+        }
+      }
+    },
   },
   plugins: [
     require('@tailwindcss/typography'),
