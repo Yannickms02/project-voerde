@@ -19,33 +19,33 @@ export class HeaderComponent {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         this.activeRoute = event.url.split("/")[1];
-        if (mobileNavBox!.className === "tw-block tw-md:hidden") {
-          navBarToggle!.className = "tw-block tw-md:hidden tw-p-2";
-          navBarClose!.className = "tw-hidden tw-md:hidden";
-          mobileNavBox!.className = "tw-hidden tw-md:hidden";
+        if (mobileNavBox!.className === "tw-block md:tw-hidden tw-z-10") {
+          navBarToggle!.className = "tw-block md:tw-hidden tw-p-2";
+          navBarClose!.className = "tw-hidden md:tw-hidden";
+          mobileNavBox!.className = "tw-hidden md:tw-hidden";
         }
       }
     });
 
     navBarToggle?.addEventListener("click", () => {
-      if (mobileNavBox!.className === "tw-hidden tw-md:hidden") {
-        navBarToggle!.className = "tw-hidden tw-md:hidden";
-        navBarClose!.className = "tw-block tw-md:hidden tw-p-2";
-        mobileNavBox!.className = "tw-block tw-md:hidden tw-z-10";
+      if (mobileNavBox!.className === "tw-hidden md:tw-hidden") {
+        navBarToggle!.className = "tw-hidden md:tw-hidden";
+        navBarClose!.className = "tw-block md:tw-hidden tw-p-2";
+        mobileNavBox!.className = "tw-block md:tw-hidden tw-z-10";
 
         navBarClose?.addEventListener("click", () => {
-          if (navBarClose.className === "tw-block tw-md:hidden tw-p-2") {
-            navBarToggle!.className = "tw-block tw-md:hidden tw-p-2";
-            navBarClose!.className = "tw-hidden tw-md:hidden";
-            mobileNavBox!.className = "tw-hidden tw-md:hidden";
+          if (navBarClose.className === "tw-block md:tw-hidden tw-p-2") {
+            navBarToggle!.className = "tw-block md:tw-hidden tw-p-2";
+            navBarClose!.className = "tw-hidden md:tw-hidden";
+            mobileNavBox!.className = "tw-hidden md:tw-hidden";
           }
         });
 
       }
       else {
-        mobileNavBox!.className = "tw-hidden tw-md:hidden";
-        navBarToggle!.className = "tw-block tw-md:hidden tw-p-2";
-        navBarClose!.className = "tw-hidden tw-md:hidden";
+        mobileNavBox!.className = "tw-hidden md:tw-hidden";
+        navBarToggle!.className = "tw-block md:tw-hidden tw-p-2";
+        navBarClose!.className = "tw-hidden md:tw-hidden";
       }
     });
     

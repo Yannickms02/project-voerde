@@ -9,13 +9,13 @@ import { HeaderComponent } from './header/header.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { DatenschutzerklaerungComponent } from './datenschutzerklaerung/datenschutzerklaerung.component';
-import { GlaubeComponent } from './glaube/glaube.component';
 import { AktuellesComponent } from './aktuelles/aktuelles.component';
-import { PartnerComponent } from './partner/partner.component';
-import { KirchenleitungComponent } from './kirchenleitung/kirchenleitung.component';
 import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AboutComponent } from './about/about.component';
+import { ProjekteComponent } from './projekte/projekte.component';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +25,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     KontaktComponent,
     ImpressumComponent,
     DatenschutzerklaerungComponent,
-    GlaubeComponent,
     AktuellesComponent,
-    PartnerComponent,
-    KirchenleitungComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent,
+    ProjekteComponent,
+    TeamComponent
   ],
   imports: [
     BrowserModule,

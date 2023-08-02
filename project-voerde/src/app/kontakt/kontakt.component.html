@@ -12,12 +12,14 @@
 
         <div class="tw-flex tw-flex-row tw-items-center md:tw-w-full tw-py-2" id="loc-container">
             <img src="assets/location.png" width="20px" alt="Standort-Icon" class="tw-items-start">
-            <a href="https://goo.gl/maps/UwxzPTAXTfBmJWvDA" class="tw-px-4">Hövelmannskath 1, 46562 Voerde (Niederrhein)</a>
+            <a href="https://goo.gl/maps/UwxzPTAXTfBmJWvDA" class="tw-px-4 tw-tooltip tw-text-left"
+                data-tip="In Google Maps öffnen">Hövelmannskath 1, 46562 Voerde (Niederrhein)</a>
         </div>
 
     </article>
     <div class="tw-hero tw-hero-content tw-flex-col md:tw-items-end tw-m-8" id="msgContainer">
-        <div class="tw-card tw-flex-shrink-0 tw-w-full tw-max-w-sm tw-shadow-lg active:tw-shadow-2xl hover:tw-shadow-2xl tw-transition-shadow tw-duration-500 tw-bg-base-100">
+        <div
+            class="tw-card tw-flex-shrink-0 tw-w-full tw-max-w-sm tw-shadow-lg active:tw-shadow-2xl hover:tw-shadow-2xl tw-transition-shadow tw-duration-500 tw-bg-base-100">
             <div class="tw-text-center">
                 <h1 class="tw-text-2xl tw-font-bold tw-px-6 tw-pt-6 tw-text-gray-800">Sende uns eine Nachricht</h1>
             </div>
@@ -26,25 +28,29 @@
                     <label class="tw-label">
                         <span class="tw-label-text">Name</span>
                     </label>
-                    <input type="text" placeholder="Vorname Nachname" class="tw-input tw-input-bordered" [(ngModel)]="msg.name" />
+                    <input type="text" placeholder="Vorname Nachname" class="tw-input tw-input-bordered"
+                        [(ngModel)]="msg.name" />
                 </div>
                 <div class="tw-form-control">
                     <label class="tw-label">
                         <span class="tw-label-text">E-Mail</span>
                     </label>
-                    <input type="text" placeholder="E-Mail-Adresse" class="tw-input tw-input-bordered" [(ngModel)]="msg.mail" />
+                    <input type="text" placeholder="E-Mail-Adresse" class="tw-input tw-input-bordered"
+                        [(ngModel)]="msg.mail" />
                 </div>
                 <div class="tw-form-control">
                     <label class="tw-label">
                         <span class="tw-label-text">Betreff</span>
                     </label>
-                    <input type="text" placeholder="Betreff" class="tw-input tw-input-bordered" [(ngModel)]="msg.subject"/>
+                    <input type="text" placeholder="Betreff" class="tw-input tw-input-bordered"
+                        [(ngModel)]="msg.subject" />
                 </div>
                 <div class="tw-form-control">
                     <label class="tw-label">
                         <span class="tw-label-text">Nachricht</span>
                     </label>
-                    <textarea type="text" placeholder="Was möchten Sie uns mitteilen?" class="tw-textarea tw-textarea-bordered" [(ngModel)]="msg.message"></textarea>
+                    <textarea type="text" placeholder="Was möchten Sie uns mitteilen?"
+                        class="tw-textarea tw-textarea-bordered" [(ngModel)]="msg.message"></textarea>
                 </div>
                 <div class="tw-form-control tw-mt-6">
                     <button class="tw-btn tw-bg-red-800 tw-text-white" id="submit-btn">Absenden</button>

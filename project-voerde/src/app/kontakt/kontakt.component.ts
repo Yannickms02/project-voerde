@@ -19,9 +19,10 @@ export class KontaktComponent implements OnInit {
   ngOnInit() {
     const submitBtn = document.querySelector("#submit-btn");
     
+    
     submitBtn?.addEventListener("click", () => {
-      
-      
+      submitBtn!.innerHTML = "Gesendet!";
+      submitBtn!.className = "tw-btn";
     });
   }
 }

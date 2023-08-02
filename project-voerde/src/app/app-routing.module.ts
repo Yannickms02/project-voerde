@@ -3,11 +3,11 @@ import { RouterModule, Routes } from '@angular/router';
 import { ImpressumComponent } from './impressum/impressum.component';
 import { KontaktComponent } from './kontakt/kontakt.component';
 import { DatenschutzerklaerungComponent } from './datenschutzerklaerung/datenschutzerklaerung.component';
-import { KirchenleitungComponent } from './kirchenleitung/kirchenleitung.component';
-import { PartnerComponent } from './partner/partner.component';
-import { GlaubeComponent } from './glaube/glaube.component';
 import { AktuellesComponent } from './aktuelles/aktuelles.component';
 import { HomeComponent } from './home/home.component';
+import { TeamComponent } from './team/team.component';
+import { ProjekteComponent } from './projekte/projekte.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,9 +15,9 @@ const routes: Routes = [
   { path: 'kontakt', component: KontaktComponent },
   { path: 'datenschutz', component: DatenschutzerklaerungComponent },
   { path: 'aktuelles', component: AktuellesComponent },
-  { path: 'team', component: KirchenleitungComponent },
-  { path: 'projekte', component: PartnerComponent },
-  { path: 'ueber-uns', component: GlaubeComponent },
+  { path: 'team', component: TeamComponent },
+  { path: 'projekte', component: ProjekteComponent },
+  { path: 'ueber-uns', component: AboutComponent },
   { path: '*', component: AktuellesComponent } // Not found route -> Not Found Page / Home
 ];
 
