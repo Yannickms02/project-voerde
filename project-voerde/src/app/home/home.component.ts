@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.less']
 })
 export class HomeComponent {
+  ngOnInit() {
+    const altarImg = document.querySelector("#altar-img");
+    const heimImg = document.querySelector("#gemeindeheim-img");
+    const teamImg = document.querySelector("#gemeindeteam-img");
 
+
+
+  }
 }

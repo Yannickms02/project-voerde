@@ -1,3 +1,49 @@
 .text-red {
     color: #9b1313;
 }
+
+.hover\:underline-link {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .hover\:underline-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #9b1313; 
+    transition: all 0.3s ease;
+    transform-origin: right;
+  }
+
+  .hover\:underline-link:hover::before {
+    width: 100%;
+  }
+
+  .hover\:underline-current {
+    position: relative;
+    transition: all 1s ease;
+  }
+
+  .hover\:underline-current::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #9b1313; 
+    transition: all 1s ease;
+    transform-origin: right;
+  }
+
+  .hover\:underline-current:hover::before {
+    width: 80%;
+  }

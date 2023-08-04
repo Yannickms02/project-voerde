@@ -1,39 +1,36 @@
 <div class="tw-flex tw-flex-col tw-flex-wrap">
-  <div class="tw-flex tw-items-center tw-justify-between tw-h-20 tw-px-8 tw-shadow-md tw-rounded tw-bg-slate-200" id="headerContainer">
+  <div class="tw-flex tw-items-center tw-justify-between tw-h-20 tw-px-8 tw-shadow-lg tw-rounded tw-bg-blue-100 dark:tw-bg-gray-900" id="headerContainer">
     <div class="tw-flex tw-text-left tw-justify-start">
-      <a routerLink="/"><img class="" src="assets/logo-rand.png" width="55px" height="55px" alt="Logo"></a>
+      <a routerLink="/"><img src="assets/logo-rand.png" width="55px" height="55px" alt="Logo"></a>
     </div>
     <div class="tw-hidden md:tw-flex tw-text-right tw-justify-end tw-font-semibold">
       <a routerLink="/ueber-uns"
-        [ngClass]="activeRoute === 'ueber-uns' ? 'tw-px-4 hover:underline-current tw-text-red-800' : 'tw-px-4 hover:underline-animation'">Über
+        [ngClass]="activeRoute === 'ueber-uns' ? 'tw-px-4 hover:underline-current tw-text-red-800 dark:tw-text-blue-300' : 'tw-px-4 hover:underline-animation dark:tw-text-slate-200'">Über
         uns</a>
       <a [routerLink]="['/aktuelles']"
-        [ngClass]="activeRoute === 'aktuelles' ? 'tw-px-4 hover:underline-current tw-text-red-800' : 'tw-px-4 hover:underline-animation'">Aktuelles</a>
+        [ngClass]="activeRoute === 'aktuelles' ? 'tw-px-4 hover:underline-current tw-text-red-800 dark:tw-text-blue-300' : 'tw-px-4 hover:underline-animation dark:tw-text-slate-200'">Aktuelles</a>
       <a routerLink="/projekte"
-        [ngClass]="activeRoute === 'projekte' ? 'tw-px-4 hover:underline-current tw-text-red-800' : 'tw-px-4 hover:underline-animation'">Projekte</a>
+        [ngClass]="activeRoute === 'projekte' ? 'tw-px-4 hover:underline-current tw-text-red-800 dark:tw-text-blue-300' : 'tw-px-4 hover:underline-animation dark:tw-text-slate-200'">Projekte</a>
       <a routerLink="/team"
-        [ngClass]="activeRoute === 'team' ? 'tw-px-4 hover:underline-current tw-text-red-800' : 'tw-px-4 hover:underline-animation'">Gemeindeteam</a>
+        [ngClass]="activeRoute === 'team' ? 'tw-px-4 hover:underline-current tw-text-red-800 dark:tw-text-blue-300' : 'tw-px-4 hover:underline-animation dark:tw-text-slate-200'">Gemeindeteam</a>
     </div>
-
 
     <div class="tw-block md:tw-hidden tw-p-2" id="navBarToggle">
-      <div class="tw-w-7 tw-h-1 tw-bg-gray-700 tw-rounded" id="line-1"></div>
-      <div class="tw-w-7 tw-h-1 tw-bg-gray-700 tw-rounded tw-mt-1" id="line-2"></div>
-      <div class="tw-w-4 tw-h-1 tw-bg-gray-700 tw-rounded tw-mt-1" id="line-3"></div>
+      <div class="tw-w-7 tw-h-1 tw-bg-gray-700 dark:tw-bg-slate-100 tw-rounded" id="line-1"></div>
+      <div class="tw-w-7 tw-h-1 tw-bg-gray-700 dark:tw-bg-slate-100 tw-rounded tw-mt-1" id="line-2"></div>
+      <div class="tw-w-4 tw-h-1 tw-bg-gray-700 dark:tw-bg-slate-100 tw-rounded tw-mt-1" id="line-3"></div>
     </div>
     <div class="tw-hidden md:tw-hidden" id="navBarClose">
-      <div class="tw-w-7 tw-h-1 tw-bg-gray-700 tw-rounded tw-rotate-45"></div>
-      <div class="tw-w-7 tw-h-1 tw-bg-gray-700 tw-rounded tw--rotate-45 tw-relative tw-bottom-1"></div>
+      <div class="tw-w-7 tw-h-1 tw-bg-gray-700 dark:tw-bg-slate-100 tw-rounded tw-rotate-45"></div>
+      <div class="tw-w-7 tw-h-1 tw-bg-gray-700 dark:tw-bg-slate-100 tw-rounded tw--rotate-45 tw-relative tw-bottom-1"></div>
     </div>
 
-
-
     <div id="mobileNavBox" class="tw-hidden md:tw-hidden tw-z-10">
-      <ul class="tw-menu tw-bg-slate-200 tw-w-56 tw-rounded-box tw-shadow-md" id="menuList">
-        <li [ngClass]="activeRoute === 'ueber-uns' ? 'hover:underline-menu-current' : 'hover:underline-menu'"><a routerLink="/ueber-uns">Über uns</a></li>
-        <li [ngClass]="activeRoute === 'aktuelles' ? 'hover:underline-menu-current' : 'hover:underline-menu'"><a [routerLink]="['/aktuelles']">Aktuelles</a></li>
-        <li [ngClass]="activeRoute === 'projekte' ? 'hover:underline-menu-current' : 'hover:underline-menu'"><a routerLink="/projekte">Projekte</a></li>
-        <li [ngClass]="activeRoute === 'team' ? 'hover:underline-menu-current' : 'hover:underline-menu'"><a routerLink="/team">Gemeindeteam</a></li>
+      <ul class="tw-menu tw-bg-blue-100 dark:tw-bg-gray-900 tw-w-56 tw-rounded-box tw-shadow-md" id="menuList">
+        <li [ngClass]="activeRoute === 'ueber-uns' ? 'hover:underline-menu-current' : 'hover:underline-menu'"><a routerLink="/ueber-uns" class="tw-text-slate-900 dark:tw-text-slate-200">Über uns</a></li>
+        <li [ngClass]="activeRoute === 'aktuelles' ? 'hover:underline-menu-current' : 'hover:underline-menu'"><a [routerLink]="['/aktuelles']" class="tw-text-slate-900 dark:tw-text-slate-200">Aktuelles</a></li>
+        <li [ngClass]="activeRoute === 'projekte' ? 'hover:underline-menu-current' : 'hover:underline-menu'"><a routerLink="/projekte" class="tw-text-slate-900 dark:tw-text-slate-200">Projekte</a></li>
+        <li [ngClass]="activeRoute === 'team' ? 'hover:underline-menu-current' : 'hover:underline-menu'"><a routerLink="/team" class="tw-text-slate-900 dark:tw-text-slate-200">Gemeindeteam</a></li>
       </ul>
     </div>
   </div>

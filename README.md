@@ -10,3 +10,5 @@ Mittels folgendem Befehl innerhalb des Projektverzeichnis ```/project-voerde``` 
 ```
 npm install
 ```
+
+Alternativ wird das Projekt auch bis zur Übernahme durch die Gemeinde auf dem Entwicklungsserver unter ```http://45.133.157.210:4200/``` gehostet.

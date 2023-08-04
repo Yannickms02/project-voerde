@@ -1,17 +1,17 @@
 <div class="tw-flex tw-flex-col md:tw-flex-row tw-justify-evenly tw-items-center tw-mx-auto">
     <article class="tw-prose tw-items-start tw-pl-16 tw-pr-8 md:tw-w-full">
-        <h1 class="tw-text-red-800">Hier sind wir erreichbar</h1>
+        <h1 class="tw-text-red-800 dark:tw-text-slate-200">Hier sind wir erreichbar</h1>
         <div class="tw-flex tw-flex-row tw-items-center md:tw-w-full tw-py-2" id="phone-container">
-            <img src="/assets/phone.png" width="20px" alt="Telefon-Icon">
+            <img src="/assets/phone.png" width="20px" alt="Telefon-Icon" class="dark:tw-invert">
             <a class="tw-px-4">Telefon: +49 171 6813142</a>
         </div>
         <div class="tw-flex tw-flex-row tw-items-center md:tw-w-full tw-py-2" id="mail-container">
-            <img src="/assets/mail.png" width="20px" alt="E-Mail-Icon">
+            <img src="/assets/mail.png" width="20px" alt="E-Mail-Icon" class="dark:tw-invert">
             <a href="mailto:voerde@apostolisch.de" class="tw-px-4">E-Mail: voerde@apostolisch.de</a>
         </div>
 
         <div class="tw-flex tw-flex-row tw-items-center md:tw-w-full tw-py-2" id="loc-container">
-            <img src="assets/location.png" width="20px" alt="Standort-Icon" class="tw-items-start">
+            <img src="assets/location.png" width="20px" alt="Standort-Icon" class="tw-items-start dark:tw-invert">
             <a href="https://goo.gl/maps/UwxzPTAXTfBmJWvDA" class="tw-px-4 tw-tooltip tw-text-left"
                 data-tip="In Google Maps öffnen">Hövelmannskath 1, 46562 Voerde (Niederrhein)</a>
         </div>
@@ -21,36 +21,36 @@
         <div
             class="tw-card tw-flex-shrink-0 tw-w-full tw-max-w-sm tw-shadow-lg active:tw-shadow-2xl hover:tw-shadow-2xl tw-transition-shadow tw-duration-500 tw-bg-base-100">
             <div class="tw-text-center">
-                <h1 class="tw-text-2xl tw-font-bold tw-px-6 tw-pt-6 tw-text-gray-800">Sende uns eine Nachricht</h1>
+                <h1 class="tw-text-2xl tw-font-bold tw-px-6 tw-pt-6 tw-text-gray-800 dark:tw-text-slate-200">Sende uns eine Nachricht</h1>
             </div>
             <div class="tw-card-body">
                 <div class="tw-form-control">
                     <label class="tw-label">
-                        <span class="tw-label-text">Name</span>
+                        <span class="tw-label-text">Name <sup class="text-red tw-text-lg tw-relative tw-top-[1px] tw-tooltip" data-tip="Pflichtfeld">*</sup></span>
                     </label>
                     <input type="text" placeholder="Vorname Nachname" class="tw-input tw-input-bordered"
-                        [(ngModel)]="msg.name" />
+                        [(ngModel)]="msg.name" id="form-name"/>
                 </div>
                 <div class="tw-form-control">
                     <label class="tw-label">
-                        <span class="tw-label-text">E-Mail</span>
+                        <span class="tw-label-text">E-Mail <sup class="text-red tw-text-lg tw-relative tw-top-[1px] tw-tooltip" data-tip="Pflichtfeld">*</sup></span>
                     </label>
                     <input type="text" placeholder="E-Mail-Adresse" class="tw-input tw-input-bordered"
-                        [(ngModel)]="msg.mail" />
+                        [(ngModel)]="msg.mail" id="form-mail"/>
                 </div>
                 <div class="tw-form-control">
                     <label class="tw-label">
-                        <span class="tw-label-text">Betreff</span>
+                        <span class="tw-label-text">Betreff <sup class="text-red tw-text-lg tw-relative tw-top-[1px] tw-tooltip" data-tip="Pflichtfeld">*</sup></span>
                     </label>
                     <input type="text" placeholder="Betreff" class="tw-input tw-input-bordered"
-                        [(ngModel)]="msg.subject" />
+                        [(ngModel)]="msg.subject" id="form-subject"/>
                 </div>
                 <div class="tw-form-control">
                     <label class="tw-label">
-                        <span class="tw-label-text">Nachricht</span>
+                        <span class="tw-label-text">Nachricht <sup class="text-red tw-text-lg tw-relative tw-top-[1px] tw-tooltip" data-tip="Pflichtfeld">*</sup></span>
                     </label>
                     <textarea type="text" placeholder="Was möchten Sie uns mitteilen?"
-                        class="tw-textarea tw-textarea-bordered" [(ngModel)]="msg.message"></textarea>
+                        class="tw-textarea tw-textarea-bordered" [(ngModel)]="msg.message" id="form-msg"></textarea>
                 </div>
                 <div class="tw-form-control tw-mt-6">
                     <button class="tw-btn tw-bg-red-800 tw-text-white" id="submit-btn">Absenden</button>

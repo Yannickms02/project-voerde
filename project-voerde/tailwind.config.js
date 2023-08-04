@@ -31,7 +31,44 @@ module.exports = {
             maxWidth: '130ch', // add required value here
           }
         }
-      }
+      },
+      keyframes: {
+        slidein_altar: {
+          '0%': {
+            transform: 'translateY(-50%)',
+            opacity: '.75'
+          },
+          '100%': {
+            transform: 'translateY(0%)',
+            opacity: '1'
+          },
+        },
+        slidein_heim: {
+          '0%': {
+            transform: 'translateX(50%)',
+            opacity: '.75'
+          },
+          '100%': {
+            transform: 'translateX(0%)',
+            opacity: '1'
+          },
+        },
+        slidein_team: {
+          '0%': {
+            transform: 'translateY(50%)',
+            opacity: '.75'
+          },
+          '100%': {
+            transform: 'translateY(0%)',
+            opacity: '1'
+          },
+        },
+      },
+      animation: {
+        slidein_altar: 'slidein_altar 1s forwards',
+        slidein_heim: 'slidein_heim 1s forwards',
+        slidein_team: 'slidein_team 1s forwards',
+      },
     },
   },
   plugins: [
