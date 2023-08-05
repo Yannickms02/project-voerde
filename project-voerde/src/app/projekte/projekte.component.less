@@ -1,3 +1,26 @@
 .text-red {
     color: #9b1313;
 }
+
+.hover\:underline-animation {
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  .hover\:underline-animation::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #9b1313; 
+    transition: all 0.3s ease;
+    transform-origin: right;
+  }
+
+  .hover\:underline-animation:hover::before {
+    width: 100%;
+  }
