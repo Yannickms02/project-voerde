@@ -4,9 +4,9 @@
         <h2 class="tw-my-4 tw-text-red-800 dark:tw-text-slate-200">Gottesdienste und Veranstaltungen</h2>
         <p>Der Gottesdienst findet zurzeit im <span
                 class="tw-badge tw-rounded-md tw-bg-red-800 tw-text-white dark:tw-bg-white dark:tw-text-slate-900 tw-py-3 tw-font-bold">vierzehntägigem</span> Rhythmus statt</p>
-        <p *ngIf="isGottesdienstToday">Nächster Gottesdienst: Heute um 10:00 Uhr</p>
-        <p *ngIf="!isGottesdienstToday">Nächster Gottesdienst: <span class="tw-badge tw-font-semibold dark:tw-bg-white dark:tw-text-slate-900">{{
-                formattedNextGottesdienstDate }}</span> um <span class="tw-badge tw-font-semibold dark:tw-bg-white dark:tw-text-slate-900">10:00 Uhr</span></p>
+        <p *ngIf="isGottesdienstToday" class="dark:tw-text-slate-200">Nächster Gottesdienst: <span class="tw-font-semibold tw-text-xl tw-underline tw-decoration-red-700 tw-decoration-offset-4">Heute um 10:00 Uhr</span></p>
+        <p *ngIf="!isGottesdienstToday" class="dark:tw-text-slate-200">Nächster Gottesdienst: <span class="tw-font-semibold tw-text-xl tw-underline tw-decoration-red-700 tw-decoration-offset-4">{{
+                formattedNextGottesdienstDate }} um 10:00 Uhr</span></p>
     </article>
     <div class="tw-hidden md:tw-block tw-mockup-browser tw-border tw-border-base-300 tw-overflow-hidden tw-shadow tw-mx-10 tw-my-8 hover:tw-shadow-lg">
         <div class="tw-mockup-browser-toolbar">
