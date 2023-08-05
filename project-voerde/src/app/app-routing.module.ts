@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'team', component: TeamComponent },
   { path: 'projekte', component: ProjekteComponent },
   { path: 'ueber-uns', component: AboutComponent },
-  { path: '*', component: AktuellesComponent } // Not found route -> Not Found Page / Home
+  { path: '*', component: HomeComponent } // Not found route -> Home
 ];
 
 @NgModule({
